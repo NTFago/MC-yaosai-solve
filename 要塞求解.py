@@ -25,8 +25,8 @@ for i in range(1, 4):
     x.append(x2)
     y2 = float(input(f"请输入第{i}次末影珍珠落地y坐标："))
     y.append(y2)
-# print(x)
-# print(y)
+# print(x)      # 测试
+# print(y)      # 测试
 
 # --------------求解一次函数解析式-------------
 k = []
@@ -38,8 +38,8 @@ for i in range(3):
     j += 2
     k.append(k1)
     b.append(b1)
-# print(k)
-# print(b)
+# print(k)      # 测试
+# print(b)      # 测试
 
 # -------------------求交点---------------------
 Rx = []
@@ -54,13 +54,13 @@ Rx2 = round((b[2]-b[0])/(k[0]-k[2]), 3) # 求解1-3交点
 Ry2 = round(Rx2*k[2]+b[2])
 Rx.append(Rx2)
 Ry.append(Ry2)
-# print(Rx)
-# print(Ry)
+# print(Rx)     # 测试
+# print(Ry)     # 测试
 
 # ----------------误差分析计算区-----------------
 # 排序
-re_Rx = sorted(Rx)
-re_Ry = sorted(Ry)
+re_Rx = sort(Rx, reverse=True)
+re_Ry = sort(Ry, reverse=True)
 # 此时大小排列：Rx[0]>Rx[1]>Rx[2] 即L=Rx[0]-Rx[2]
 RL=0.5*(re_Rx[0]+re_Rx[2])
 RH=0.5*(re_Ry[0]+re_Ry[2])
